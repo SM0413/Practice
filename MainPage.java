@@ -8,6 +8,9 @@ public class MainPage {
 	static Random rd = new Random();
 	static Basic basic = new Basic();
 	public static void main(String[] args) {
+
+
+		System.out.println("Git연동 완료");
 		System.out.println("Welcome to MainPage");
 		while(true) {
 			ChoicePrograme();
