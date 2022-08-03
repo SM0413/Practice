@@ -4,6 +4,10 @@ import java.util.*;
 
 public class Random {
 	Scanner sc = new Scanner(System.in);
+
+	public Integer Number(){
+		return (int)(Math.random()*8+1);
+	}
 	
 	public void LottoNumber(int count) {
 		int lotto[] = new int[6];	// 로또 번호를 입력받을 배열을 선언해준다.
