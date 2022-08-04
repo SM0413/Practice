@@ -5,8 +5,6 @@ import java.util.*;
 
 public class MainPage {
 	static Scanner sc = new Scanner(System.in);
-	static Random rd = new Random();
-	static Basic basic = new Basic();
 	public static void main(String[] args) {
 
 
@@ -41,6 +39,7 @@ public class MainPage {
 	}
 
 	private static void GuGudan() {
+		Basic basic = new Basic();
 		while(true) {
 			try {
 				System.out.println("구하려는 구구단의 단수를 입력하세요");
@@ -55,9 +54,11 @@ public class MainPage {
 					System.out.println("9단 까지만 출력 가능합니다");
 					continue;
 				}else if(num == 0) {
-					basic.AllGuGuDan(num);
+					//구구단 전체 출력
+					basic.AllGuGuDan();
 					return;
 				}else{
+					//원하는 구구단 출력
 					basic.WhatGuGuDan(num);
 					return;
 				}
@@ -71,6 +72,7 @@ public class MainPage {
 	}
 
 	private static void LottoNumber() {
+		Random rd = new Random();
 		while(true) {
 			System.out.println("출력 횟수를 입력하세요");
 			System.out.print(">");
@@ -88,6 +90,7 @@ public class MainPage {
 	}
 
 	private static void RandomPassword() {
+		Random rd = new Random();
 		System.out.println(rd.Password());
 		System.out.println();
 	}
