@@ -40,7 +40,7 @@ public class MainPage {
 	}
 
 	private static void GuGudan() {
-		Basic basic = new Basic();
+		Basic basic = new Basic();	
 		while(true) {
 			try {
 				System.out.println("구하려는 구구단의 단수를 입력하세요");
@@ -58,7 +58,7 @@ public class MainPage {
 					//구구단 전체 출력
 					basic.AllGuGuDan();
 					return;
-				}else{
+				}else{	
 					//원하는 구구단 출력
 					basic.WhatGuGuDan(num);
 					return;
